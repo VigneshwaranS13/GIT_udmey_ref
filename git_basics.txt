@@ -43,6 +43,17 @@ git clone url
 	it will create a repository
 
 
+to rename file using git:
+git mv oldfilename.ext  newfilename.ext
+  since its tracked file it will be moved to stagging area after this
+
+to rename file using os:
+mv oldfilename.ext newfilename.ext
+ if we use this method then we need to add a file to git again and need to commit. Or we can use below command
+  to tell the git it was renamed,it will move all the renamed or moved file changes to git
+ 
+git add -A
+ 
 to list the tracked files :
 git ls-files
 
@@ -55,6 +66,7 @@ git commit -m "message for commit"
 
 
 to add and commit of tracked files:
+
 git commit -am "adding copy right"
 
 
